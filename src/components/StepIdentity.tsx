@@ -18,8 +18,7 @@ export function StepIdentity({ name, onChange, onContinue }: Props) {
   const [error, setError] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  function handleSubmit(event: React.FormEvent) {
-    event.preventDefault();
+  function enviar() {
     const resultado = validateName(name);
     if (!resultado.ok) {
       setError(resultado.error);
@@ -28,6 +27,11 @@ export function StepIdentity({ name, onChange, onContinue }: Props) {
     }
     setError(null);
     onContinue(resultado.value);
+  }
+
+  function handleSubmit(event: React.FormEvent) {
+    event.preventDefault();
+    enviar();
   }
 
   return (
@@ -46,6 +50,12 @@ export function StepIdentity({ name, onChange, onContinue }: Props) {
           onChange={(event) => {
             onChange(event.target.value);
             if (error) setError(null);
+          }}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter') {
+              event.preventDefault();
+              enviar();
+            }
           }}
           type="text"
           inputMode="text"

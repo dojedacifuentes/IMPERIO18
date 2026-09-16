@@ -21,7 +21,7 @@ export function AppHeader({ compact }: { compact: boolean }) {
   return (
     <header className="safe-top border-b border-imperio-700 bg-imperio-950/70">
       <div className="mx-auto flex w-full max-w-md flex-col items-center gap-2 px-4 pb-5 pt-2 text-center">
-        <Logo size={116} className="animate-fade-up" />
+        <Logo size={140} className="animate-fade-up" />
         <h1 className="text-3xl font-extrabold leading-none text-silver-100">Desafíos de Brayan</h1>
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-gold-400">
           ¿Tienes lo necesario?
