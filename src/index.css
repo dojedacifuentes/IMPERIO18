@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-imperio-950 text-silver-100 font-sans antialiased;
+    background-image:
+      radial-gradient(circle at 12% -10%, rgba(37, 99, 235, 0.22), transparent 45%),
+      radial-gradient(circle at 92% 0%, rgba(245, 185, 21, 0.14), transparent 42%);
+    background-attachment: fixed;
+    min-height: 100%;
+    overscroll-behavior-y: none;
+  }
+
+  /* Tipografia de titulos */
+  h1,
+  h2,
+  h3 {
+    @apply font-display uppercase tracking-wide;
+  }
+
+  /* Foco visible y consistente en toda la app */
+  :focus-visible {
+    outline: 3px solid theme('colors.gold.400');
+    outline-offset: 2px;
+    border-radius: 0.5rem;
+  }
+
+  /* Quita las flechas de los inputs numericos */
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-imperio-700 bg-imperio-850 shadow-card;
+  }
+
+  .safe-bottom {
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .safe-top {
+    padding-top: calc(0.75rem + env(safe-area-inset-top, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

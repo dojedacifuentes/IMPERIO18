@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Team Imperio - V Region">
+  <title>Team Imperio · V Región</title>
+  <defs>
+    <linearGradient id="ti-silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#DDE6F3"/>
+      <stop offset="100%" stop-color="#8090AD"/>
+    </linearGradient>
+    <linearGradient id="ti-silver2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFDFF"/>
+      <stop offset="55%" stop-color="#C6D3E7"/>
+      <stop offset="100%" stop-color="#8FA0BC"/>
+    </linearGradient>
+    <linearGradient id="ti-steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF3FB"/>
+      <stop offset="50%" stop-color="#A7B6D0"/>
+      <stop offset="100%" stop-color="#6E7F9C"/>
+    </linearGradient>
+    <linearGradient id="ti-crest" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0%" stop-color="#6BA6FF"/>
+      <stop offset="35%" stop-color="#2159DE"/>
+      <stop offset="100%" stop-color="#091F6C"/>
+    </linearGradient>
+    <linearGradient id="ti-ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3069DE"/>
+      <stop offset="52%" stop-color="#153588"/>
+      <stop offset="100%" stop-color="#091F57"/>
+    </linearGradient>
+    <linearGradient id="ti-ribbonDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12306F"/>
+      <stop offset="100%" stop-color="#06153E"/>
+    </linearGradient>
+
+    <path id="ti-leaf" d="M256 66 C280 88 282 122 266 142 C242 124 238 90 256 66 Z"/>
+    <path id="ti-star" d="M0 -15 L3.8 -5.2 L14.3 -4.6 L6.1 2 L8.8 12.1 L0 6.4 L-8.8 12.1 L-6.1 2 L-14.3 -4.6 L-3.8 -5.2 Z"/>
+    <g id="ti-spear">
+      <path d="M0 -52 C14 -26 17 -2 11 22 L-11 22 C-17 -2 -14 -26 0 -52 Z"/>
+      <path d="M0 -40 L0 16" stroke="#5E6F8C" stroke-width="2.5" fill="none" opacity="0.7"/>
+      <rect x="-13" y="22" width="26" height="12" rx="4"/>
+    </g>
+
+    <g id="ti-branch">
+      <path d="M340 404 A 150 150 0 0 0 340 156" fill="none" stroke="#A8B7D1" stroke-width="10" stroke-linecap="round"/>
+      <use href="#ti-leaf" transform="rotate(34 256 280)"/>
+      <use href="#ti-leaf" transform="rotate(50 256 280)"/>
+      <use href="#ti-leaf" transform="rotate(66 256 280)"/>
+      <use href="#ti-leaf" transform="rotate(82 256 280)"/>
+      <use href="#ti-leaf" transform="rotate(98 256 280)"/>
+      <use href="#ti-leaf" transform="rotate(114 256 280)"/>
+      <use href="#ti-leaf" transform="rotate(130 256 280)"/>
+      <use href="#ti-leaf" transform="rotate(146 256 280)"/>
+    </g>
+  </defs>
+
+  <!-- Lanzas cruzadas -->
+  <g>
+    <g stroke="#93A4C2" stroke-width="12" stroke-linecap="round">
+      <line x1="190" y1="418" x2="424" y2="132"/>
+      <line x1="322" y1="418" x2="88" y2="132"/>
+    </g>
+    <g fill="url(#ti-steel)" stroke="#55637E" stroke-width="3" stroke-linejoin="round">
+      <use href="#ti-spear" transform="translate(440 120) rotate(39)"/>
+      <use href="#ti-spear" transform="translate(72 120) rotate(-39)"/>
+    </g>
+  </g>
+
+  <!-- Corona de laurel -->
+  <g fill="url(#ti-silver)" stroke="#6C7C97" stroke-width="2" stroke-linejoin="round">
+    <use href="#ti-branch"/>
+    <use href="#ti-branch" transform="translate(512 0) scale(-1 1)"/>
+  </g>
+
+  <!-- Penacho -->
+  <g>
+    <path d="M141 183 A 130 250 0 0 1 371 183 L 341 255 A 96 95 0 0 0 171 255 Z" fill="url(#ti-crest)"/>
+    <g stroke="#9BC6FF" stroke-width="3.5" stroke-linecap="round" opacity="0.42" fill="none">
+      <path d="M176 226 C176 150 206 92 252 62"/>
+      <path d="M206 216 C206 148 224 96 254 64"/>
+      <path d="M256 210 L256 58"/>
+      <path d="M306 216 C306 148 288 96 258 64"/>
+      <path d="M336 226 C336 150 306 92 260 62"/>
+    </g>
+  </g>
+
+  <!-- Casco corintio -->
+  <g>
+    <path fill="url(#ti-silver)" stroke="#6C7C97" stroke-width="3.5" stroke-linejoin="round"
+      d="M170 302 C170 226 204 186 256 186 C308 186 342 226 342 302 L342 338
+         C342 372 328 396 308 408 L296 352 C296 340 288 332 276 332
+         L236 332 C224 332 216 340 216 352 L204 408
+         C184 396 170 372 170 338 Z"/>
+    <path d="M246 252 L266 252 L268 348 L256 364 L244 348 Z" fill="url(#ti-silver2)" stroke="#6C7C97" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M192 286 C202 266 224 260 236 270 C236 288 220 300 202 297 C195 296 191 292 192 286 Z" fill="#0A1B3D"/>
+    <path d="M320 286 C310 266 288 260 276 270 C276 288 292 300 310 297 C317 296 321 292 320 286 Z" fill="#0A1B3D"/>
+    <path d="M182 258 C204 236 308 236 330 258" fill="none" stroke="#9DADC7" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="196" cy="240" r="4.5" fill="#EAF0FA"/>
+    <circle cx="316" cy="240" r="4.5" fill="#EAF0FA"/>
+  </g>
+
+  <!-- Banda principal -->
+  <g>
+    <path d="M28 326 L82 340 L82 408 L28 424 L46 375 Z" fill="url(#ti-ribbonDark)"/>
+    <path d="M484 326 L430 340 L430 408 L484 424 L466 375 Z" fill="url(#ti-ribbonDark)"/>
+    <path d="M74 332 C170 316 342 316 438 332 L438 412 C342 428 170 428 74 412 Z" fill="url(#ti-ribbon)" stroke="url(#ti-silver2)" stroke-width="5"/>
+    <text x="256" y="363" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" font-size="26" font-weight="700" letter-spacing="8" fill="#D5E1F5">TEAM</text>
+    <text x="256" y="406" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" font-size="51" font-weight="800" letter-spacing="1" fill="url(#ti-silver)">IMPERIO</text>
+  </g>
+
+  <!-- Banda inferior -->
+  <g>
+    <path d="M104 418 C190 438 322 438 408 418 L408 466 C322 486 190 486 104 466 Z" fill="url(#ti-ribbon)" stroke="url(#ti-silver2)" stroke-width="4.5"/>
+    <text x="256" y="462" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" font-size="33" font-weight="800" letter-spacing="6" fill="url(#ti-silver)">V REGIÓN</text>
+  </g>
+
+  <!-- Estrellas -->
+  <g fill="url(#ti-silver)" stroke="#6C7C97" stroke-width="1.5">
+    <use href="#ti-star" transform="translate(208 488) scale(0.82)"/>
+    <use href="#ti-star" transform="translate(256 493) scale(0.95)"/>
+    <use href="#ti-star" transform="translate(304 488) scale(0.82)"/>
+  </g>
+</svg>
