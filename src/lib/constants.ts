@@ -20,5 +20,18 @@ export const MODES: Record<Mode, { label: string; price: number; priceLabel: str
   },
 };
 
+
+/**
+ * Ruta del emblema del Team Imperio.
+ * El proyecto trae el emblema vectorial: carga al instante y se ve nítido en
+ * cualquier pantalla. Si subes el PNG oficial a `public/logo-imperio.png`,
+ * cambia esta línea a '/logo-imperio.png'. Si ese archivo llegara a faltar,
+ * la app vuelve sola al vectorial.
+ */
+export const LOGO_SRC = '/logo-imperio.svg';
+
+/** Emblema que siempre viaja con el proyecto. */
+export const LOGO_VECTOR = '/logo-imperio.svg';
+
 export const SAFETY_NOTICE =
   'Realiza los desafíos bajo supervisión. Detén el intento ante dolor, mareo o pérdida de control.';

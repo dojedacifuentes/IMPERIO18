@@ -122,15 +122,19 @@ También en `src/lib/constants.ts`, dentro de `MODES`. Recuerda ajustar `price` 
 
 ### Usar el logo oficial en PNG
 
-La app trae el emblema vectorial `public/logo-imperio.svg` (liviano y nítido en cualquier pantalla).
+La app trae el emblema vectorial `public/logo-imperio.svg`: pesa 6 KB, carga al instante y se ve
+nítido en cualquier pantalla.
 
-Si prefieres el PNG original del Team Imperio, guárdalo como:
+Si prefieres el PNG original del Team Imperio:
 
+1. Guárdalo como `public/logo-imperio.png`.
+2. En `src/lib/constants.ts`, cambia una línea:
+
+```ts
+export const LOGO_SRC = '/logo-imperio.png';
 ```
-public/logo-imperio.png
-```
 
-La app lo toma automáticamente y usa el SVG solo como respaldo. No hay que tocar código.
+Si ese archivo llegara a faltar, la app vuelve sola al emblema vectorial.
 
 ### Editar los desafíos
 
